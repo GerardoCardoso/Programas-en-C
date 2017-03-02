@@ -1,0 +1,42 @@
+/* PROGRAMA PARA SACAR EL PROMEDIO DE CINCO CALIFICACIONES Y QUE IMPRIMA
+EL PROMEDIO Y SI EL ALUMNO ESTA APROBADO O REPROBADO
+
+PROGRAMO: ING. GERARDO CARDOSO*/
+
+# include <stdio.h>
+# include <conio.h>
+
+main()
+
+{
+
+int calif1, calif2, calif3, calif4, calif5;
+float PROMEDIO;
+
+printf("\n\n\n\tDAME LA PRIMERA CALIFICACION\t");
+scanf("%d", &calif1);
+
+printf("\n\n\n\tDAME LA SEGUNDA CALIFICACION\t");
+scanf("%d", &calif2);
+
+printf("\n\n\n\tDAME LA TERCERA CALIFICACION\t");
+scanf("%d", &calif3);
+
+printf("\n\n\n\tDAME LA CUARTA CALIFICACION\t");
+scanf("%d", &calif4);
+
+printf("\n\n\n\tDAME LA QUINTA CALIFICACION\t");
+scanf("%d", &calif5);
+
+
+PROMEDIO =(float) (calif1 + calif2 + calif3 + calif4 + calif5)/5;
+
+if (PROMEDIO>=60)
+	printf("\n\n\n\tEL PROMEDIO DEL ALUMNO ES:\t %.2f , \tA P R O B A D O", PROMEDIO);
+
+else
+	printf("\n\n\n\tEL PROMEDIO DEL ALUMNO ES:\t %.2f , \tR E P R O B A D O", PROMEDIO);
+
+getch ();
+
+}
