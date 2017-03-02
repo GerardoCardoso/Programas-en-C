@@ -1,0 +1,42 @@
+/* Programa para calcular las 4 operaciones basicas
+Hecho por Gerardo Cardoso*/
+
+#include <stdio.h>
+#include <conio.h>
+
+
+
+main()
+/*definir los tipos de datos y variables*/
+{
+
+int N1, n2, SUMA, RESTA, MULT;
+float DIV;
+
+printf("\n\nDame 2 numeros positivos""\t");
+scanf("%d%d", &N1, &n2);
+
+if(n2==0)
+
+ printf("\n\n\a***ERROR***\n\a*****NO SE PUEDE DIVIDIR ENTRE CERO*****");
+
+SUMA = N1 + n2;
+RESTA = N1 - n2;
+MULT = N1 * n2;
+DIV = (float)N1 / n2;
+
+
+//* CADENA DE CONTROL ES DE DONDE EMPIEZAN LAS COMILLAS
+//* para cantidades enteras se toma %d
+//* para cantidades con punto decimal se toma %f
+
+printf("\n\nSUMA = %d", SUMA);
+printf("\n\nResta = %d", RESTA);
+printf("\n\nMULTIPLICACION = %d", MULT);
+
+
+
+printf("\n\ndivision = %f", DIV);
+
+getch();
+}
