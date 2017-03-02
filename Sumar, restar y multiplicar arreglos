@@ -1,0 +1,188 @@
+// Programa para sumar, restar y multiplicar ARREGLOS
+
+//Programo: Ing. Gerardo Cardoso
+
+#include <conio.h>
+#include <stdio.h>
+#define fila 2
+#define col 2
+
+char HOLA (void);
+char nombre [40];
+
+main()
+{
+int A[fila][col], B[fila][col], C[fila][col], i, j;
+float D[fila][col];
+char x;
+int eleccion;
+
+do{
+
+
+clrscr();
+HOLA();
+printf("\n\n\t ESTE PROGRAMA REALIZA LA MATRIZ DE LOS NUMERO DADOS \n");
+printf("\n\n\t ¿QUE DESEAS HACER? \n");
+printf("\n\n\t 1 SUMA");
+printf("\n\n\t 2 RESTA");
+printf("\n\n\t 3 MULTIPLICACION\n\t");
+scanf("%d", &eleccion);
+
+
+switch(eleccion)
+{
+case 1:
+printf("\n\n\t SUMA \n");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME A [%d][%d]  ", i, j);
+   scanf("%d",&A[i][j]);}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME B [%d][%d]  ", i, j);
+   scanf("%d",&B[i][j]);}}
+
+printf("\n\n\t MATRIZ A\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",A[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+printf("\n\n\t MATRIZ B\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",B[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+
+printf("\n\n\t SUMA DE A + B\n");
+	for(i=0; i<fila; ++i){
+		for(j=0; j<col; ++j){
+      C[i][j] = A[i][j] + B[i][j];}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){+
+   	printf("\t %d ", C[i][j]);
+
+      if(j==(col-1))
+      	printf("\n\n");}}
+
+break;
+
+case 2:
+
+printf("\n\n\t RESTA \n");
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME A [%d][%d]  ", i, j);
+   scanf("%d",&A[i][j]);}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME B [%d][%d]  ", i, j);
+   scanf("%d",&B[i][j]);}}
+
+printf("\n\n\t MATRIZ A\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",A[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+printf("\n\n\t MATRIZ B\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",B[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+
+printf("\n\n\t SUMA DE A + B\n");
+	for(i=0; i<fila; ++i){
+		for(j=0; j<col; ++j){
+      C[i][j] = A[i][j] - B[i][j];}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){+
+   	printf("\t %d ", C[i][j]);
+
+      if(j==(col-1))
+      	printf("\n\n");}}
+
+break;
+
+case 3:
+
+printf("\n\n\t MULTIPLICACION \n");
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME A [%d][%d]  ", i, j);
+   scanf("%d",&A[i][j]);}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\n\n\t DAME B [%d][%d]  ", i, j);
+   scanf("%d",&B[i][j]);}}
+
+printf("\n\n\t MATRIZ A\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",A[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+printf("\n\n\t MATRIZ B\n ");
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){
+   printf("\t %d  ",B[i][j]);
+
+   	if(j==(col-1))
+      	printf("\n\n");}}
+
+
+printf("\n\n\t SUMA DE A + B\n");
+	for(i=0; i<fila; ++i){
+		for(j=0; j<col; ++j){
+      C[i][j] = A[i][j] * B[i][j];}}
+
+for(i=0; i<fila; ++i){
+	for(j=0; j<col; ++j){+
+   	printf("\t %d ", C[i][j]);
+
+      if(j==(col-1))
+      	printf("\n\n");}}
+
+break;
+default: printf("\n\n\t ERROR, ¡ELECCION NO VALIDA!\n");
+}
+
+printf("\n\n\t DESEAS REPEIR EL PROCESO? S/N \n");
+
+do{x=getch();
+}while (x!= 's' && x!= 'n');
+}while (x=='s');
+}
+
+
+char HOLA(void){
+printf("\n\n\t Cual es tu nombre? \n\t");
+scanf("%s",&nombre);
+return printf("\n\n\t BINVENIDO A ESTE PROGRAMA %s \n", nombre);
+
+}
