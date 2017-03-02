@@ -1,0 +1,36 @@
+//*PROGRAMA PARA RESTAR 3 NUMEROS
+
+#include <stdio.h>
+#include <conio.h>
+
+main ()
+{
+
+float NUM1, NUM2, NUM3, RES;
+char NOMBRE[9];
+
+printf("\a\n\n HOLA, ESTE PROGRAMA RESTAR TRES NUMEROS ENTEROS \n" "\a");
+
+printf("\a\n\nCUAL ES TU NOMBRE \n" "\a");
+scanf("%s", &NOMBRE);
+
+printf("\a\n\n%s DAME EL PRIMER NUMERO \n" "\a",NOMBRE);
+scanf("%f", &NUM1);
+
+printf("\a\n\n%s DAME EL SEGUNDO NUMERO \n" "\a",NOMBRE);
+scanf("%f", &NUM2);
+
+printf("\a\n\n%s DAME EL TERCER NUMERO \n" "\a",NOMBRE);
+scanf("%f", &NUM3);
+
+
+RES = NUM1 - NUM2 - NUM3;
+
+printf("\n\n%s EL RESULTADO DE LA RESTA ES %f \n\n ", NOMBRE, RES);
+
+
+printf("\a\n\n%s PRESIONE CUALQUIER TECLA PARA SALIR \n" "\a", NOMBRE);
+
+getch();
+
+} //* FIN DEL MAIN
