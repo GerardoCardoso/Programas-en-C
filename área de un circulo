@@ -1,0 +1,24 @@
+/* PROGRAMA PARA CONOCER EL AREA DE UN CIRCULO
+AREA= PI*r^2
+REALIZADO POR: ING. GERARDO CARDOSO */
+
+# include <stdio.h>
+# include <conio.h>
+# define	PI	3.14159
+
+main ()
+{
+
+char NOMBRE [15];
+float RADIO, AREA;
+printf("\n\a HOLA, BIENVENIDO(A) A ESTE PROGRAMA QUE CALCULA EL AREA DEL CIRCULO\n");
+printf("\n\a CUAL ES TU NOMBRE\t");
+scanf("%s", &NOMBRE);
+printf("\n\a %s DAME EL RADIO\t", NOMBRE);
+scanf("%f", &RADIO);
+AREA = PI * RADIO * RADIO;
+printf("\n\a %s EL AREA DEL CIRCULO ES %f \n", NOMBRE, AREA);
+printf("\a\n PARA SALIR DEL PROGRAMA PULSE CUALQUIER TECLA o CIERRE LA VENTANA");
+
+getch();
+}
