@@ -1,0 +1,59 @@
+/* PROGRAMA PARA IMPRIMIR 5 TABLAS DE MULTIPLICAR
+PROGRAMO: ING. GERARDO CARDOSO
+*/
+
+#include <conio.h>
+#include <stdio.h>
+
+main ()
+{
+int T, acum=0, mult=0;
+char x;
+
+do
+{
+printf ("\n\n\t TABLAS DE MULTIPLICAR DEL 1 AL 5");
+printf("\n\tTABLA DEL 1" );
+for (T=1; T<11; T++)
+{
+acum=T+T;
+mult=T*1;
+printf("\n\t1 *\t%d = %i\n\n", T,mult );
+}
+
+printf("\n\tTABLA DEL 2" );
+for (T=1; T<11; T++)
+{
+acum=T+T;
+mult=T*2;
+printf("\n\t2 *\t%d = %i\n\n", T,mult );
+}
+printf("\n\tTABLA DEL 3" );
+for (T=1; T<11; T++)
+{
+acum=T+T;
+mult=T*3;
+printf("\n\t3 *\t%d = %i\n\n", T,mult );
+}
+printf("\n\tTABLA DEL 4" );
+for (T=1; T<11; T++)
+{
+acum=T+T;
+mult=T*4;
+printf("\n\t4 *\t%d = %i\n\n", T,mult );
+}
+
+printf("\n\tTABLA DEL 5" );
+for (T=1; T<11; T++)
+{
+acum=T+T;
+mult=T*5;
+printf("\n\t5 *\t%d = %i\n\n", T,mult );
+}
+printf("\n\n\tDESEAS REPETIR EL PROCESO?, PRESIONA S");
+do
+	 {x=getch();
+
+	}while(x!= 's' && x!='n');
+	}while(x=='s');
+}
