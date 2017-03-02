@@ -1,0 +1,43 @@
+/* PROGRAMA QUE EFECTUA UN DESCUENTO EN UNA TIENDA DEPENDIENDO EL MONTO DE LA COMPRA
+Y DETERMINA LO QUE EL CLIENTE DEBE PAGAR.
+PROGRAMO: ING. GERARDO CARDOSO */
+
+# include <stdio.h>
+# include <conio.h>
+
+main ()
+{
+float monto, pagar;
+printf("\n\tINGRESAR EL TOTAL DE LA COMPRA  ");
+scanf("%f", &monto);
+if(monto<500)
+	{
+   pagar = monto;
+   }
+
+else
+	{
+   if(monto<=1000)
+   	pagar = monto * 0.95;
+
+		else
+      	{
+         if(monto<=7000)
+         pagar = monto * 0.89;
+
+         	else
+            	{
+               if(monto<=15000)
+               pagar = monto * 0.82;
+
+						else
+               	{
+                  pagar = monto * 0.75;
+                  }
+               }
+			}
+	}
+printf("\n\tLO QUE TIENE QUE PAGAR ES:  %.2f", pagar);
+
+getch();
+}
