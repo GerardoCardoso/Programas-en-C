@@ -1,0 +1,41 @@
+//*PROGRAMA GERARDO RODOLFO
+
+#include <stdio.h>
+#include <conio.h>
+#define CAJAS					8
+#define UNIDADES_POR_CAJA	25
+#define PRECIO_POR_UNIDAD	100
+#define IMPUESTOS				1.16
+
+
+main()
+{
+int precio;
+
+precio=(CAJAS*UNIDADES_POR_CAJA*PRECIO_POR_UNIDAD)*(IMPUESTOS);
+
+
+printf("\n""El Precio total es: %i", precio);
+
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+precio = (4*25*100)*(1.16);
+printf("\nEl Precio total es: %i", precio);
+
+getch ();
+
+}
