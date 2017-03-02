@@ -1,0 +1,31 @@
+//*ESTE PROGRAMA SE UTILIZA PARA CALCULAR LA SUMA DE 2 NUMEROS ENTEROS
+
+
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+
+int Numero1, Numero2, RESULTADO;
+//*¨EL %d SE UTILIZA PARA VARIBLES O CANTIDADES DE TIPO ENTEROS CON LA INSTRUCCION "int"
+printf("\a\n\n, HOLA, ESTE PROGRAMA SUMA DOS NUMEROS ENTEROS \n" "\a");
+
+printf("\a\n\n, DAME EL PRIMER NUMERO \n" "\a");
+scanf("%d", &Numero1);
+
+printf("\a\n\n, DAME EL SEGUNDO NUMERO \n" "\a");
+scanf("%d", &Numero2);
+
+
+RESULTADO = Numero1 + Numero2;
+
+printf("\n\n EL RESULTADO DE LA SUMA ES %d \n\n ", RESULTADO);
+
+
+printf("\a\n\n, PRESIONE CUALQUIER TECLA PARA SALIR \n" "\a");
+
+getch();
+
+}
+//FIN MAIN
