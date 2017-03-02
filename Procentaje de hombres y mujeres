@@ -1,0 +1,40 @@
+/* PROGRAMA PARA ENCONTRAR EL PORCENTAJE DE HOMBRES Y MUJERES
+PROGRAMO: ING. GERARDO CARDOSO */
+
+#include <stdio.h>
+#include <conio.h>
+
+int main ()
+{
+float total=0, ciclo=0,cont_h=0, cont_m=0, porc_h=0, porc_m=0;
+char mof;
+gotoxy(5,5);
+printf("cuantos alumnos hay en este grupo?: ");
+scanf("%f", &total);
+
+{
+clrscr();
+
+PREG: gotoxy(10,6);
+printf("sexo del alumno %.f? (M o F); ", ciclo);
+scanf("%c", &mof);
+
+if {(mof == "m" || mof == "M") cont_h++}
+
+else if {(mof == "f" || mof == "F") cont_m++}
+
+else
+	goto PREG;
+}
+
+// Calculos
+porc_h = cont_h/total*100;
+porc_m = cont_m/total*100;
+
+
+gotoxy(5,5); printf("EL PORCENTAJE DE HOMBRES ES %.1f de %.f", porc_h, cont_h, total);
+gotoxy(5,6); printf("EL PORCENTAJE DE MUJERES ES %.1f de %.f", porc_m, cont_m, total);
+
+getch ();
+
+}
